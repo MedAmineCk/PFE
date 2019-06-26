@@ -1,0 +1,27 @@
+$colors:(Primary: #01579b,
+    P-Dark: #002f6c,
+    P-Light: #4f83cc,
+    background: #FAFAFA,
+    card: #F1F1F1,
+    item: #C4C4C4,
+    btn: #311b92,
+    font: rgb(12, 22, 53),
+    font-light: #fffffe,
+    title: #000,
+    title-light: #424242);
+
+$padding: 10px;
+$border: 1px solid #607D8B;
+$border-radius: 4px;
+
+@function colors($color-name) {
+    @return map-get($map: $colors, $key: $color-name);
+}
+
+$mobile: 840px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}

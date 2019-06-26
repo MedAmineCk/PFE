@@ -1,0 +1,260 @@
+header {
+  width: 100%;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 320px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  list-style: none;
+  color: white;
+}
+
+header ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header ul li.login {
+  width: 100px;
+  height: 35px;
+  background: #00d2ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+header .logo {
+  width: 100px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container .main {
+  display: none;
+  width: 39%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container .main p {
+  color: #fffffe;
+  font-size: 24px;
+}
+
+.container .main button {
+  width: 160px;
+  height: 35px;
+  border: none;
+  border-radius: 50px;
+  background: #E91E63;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container .login .input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 auto 20px auto;
+  position: relative;
+  border-radius: 4px;
+}
+
+.container .login .input label {
+  background: #fff;
+  position: absolute;
+  z-index: 1;
+  left: 10px;
+  top: 10px;
+  font-size: 18px;
+  color: #4c4c4c;
+  -webkit-transition: all 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: all 0.15s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.container .login .input input {
+  position: absolute;
+  z-index: 2;
+  width: 99%;
+  height: 93%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #4c4c4c;
+  margin: 2px;
+}
+
+.container .login .input .err {
+  display: none;
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  bottom: -35px;
+  padding-top: 7px;
+  z-index: 99;
+}
+
+.container .login .arrow_box {
+  position: relative;
+  border: 1px solid #E91E63;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #E91E63;
+}
+
+.container .login .arrow_box:after,
+.container .login .arrow_box:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.container .login .arrow_box:after {
+  border-color: rgba(213, 213, 213, 0);
+  border-bottom-color: #f7f7f7;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.container .login .arrow_box:before {
+  border-color: rgba(82, 82, 82, 0);
+  border-bottom-color: #E91E63;
+  border-width: 8px;
+  margin-left: -8px;
+}
+
+.container .login .login-interface {
+  width: 330px;
+  min-height: 365px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  left: 230px;
+  border: 2px solid #00a5ff;
+  -webkit-box-shadow: 0px 0px 6px #00a5ff;
+  box-shadow: 0px 0px 6px #00a5ff;
+}
+
+.container .login .login-interface .login-icon {
+  width: 100%;
+  height: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.container .login .login-interface .login-icon i {
+  font-size: 90px;
+  color: #607D8B;
+}
+
+.container .login .login-interface .title {
+  width: 150px;
+  height: 25px;
+  margin: 20px auto;
+  font-size: 13px;
+  color: #263238;
+}
+
+.container .login .login-interface a.forget {
+  color: #37474F;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.container .login .login-interface .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  justify-content: center;
+}
+
+.container .login .login-interface .btns button {
+  width: 100px;
+  height: 35px;
+  border: none;
+  background: #009688;
+  color: white;
+}
+
+/*# sourceMappingURL=style-index.css.map */
